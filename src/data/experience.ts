@@ -1,5 +1,8 @@
-// Employer roles — no public repo to link, so these live on the About page
-// timeline rather than the Projects grid.
+// Employer/contractor roles — no public repo to link, so these live on the
+// About page timeline rather than the Projects grid. Two separate current
+// roles per the CV: full-time at Transborder, and an independent AI
+// contracting practice run in parallel — kept as distinct entries rather
+// than folded into one, since they're different employers/engagements.
 
 export interface ExperienceTranslation {
   summary: string
@@ -16,6 +19,34 @@ export interface ExperienceEntry {
 }
 
 export const experience: ExperienceEntry[] = [
+  {
+    id: 'ai-contractor',
+    company: 'Self-Employed',
+    role: 'AI Solutions Engineer (Contractor)',
+    startDate: '2025-01',
+    translations: {
+      en: {
+        summary: 'Independent AI engineering practice delivering production-ready orchestration, workflow automation, and data-analytics architectures for clients, run in parallel with my full-time role.',
+        highlights: [
+          'Architect multimedia AI agents on WhatsApp and Telegram using Python and n8n, with automated Excel data processing for scheduling and self-hosted Metabase dashboards for interactive analytics.',
+          'Design production business workflows in n8n and engineer proof-of-concept autonomous agent networks on the OpenAI Agents SDK.',
+          'Implement RAG and GraphRAG architectures in Python and n8n to give autonomous agents deep contextual data retrieval.',
+          'Build and self-host custom Model Context Protocol (MCP) integrations and real-time Voice-AI agents on LiveKit, including full server deployment for low-latency interactions.',
+          'Delivered results: low-latency voice AI in production, fully automated scheduling pipelines, and interactive real-time BI dashboards.',
+        ],
+      },
+      es: {
+        summary: 'Práctica independiente de ingeniería de IA — arquitecturas de orquestación, automatización de workflows, y analítica de datos listas para producción para clientes propios, en paralelo a mi rol de tiempo completo.',
+        highlights: [
+          'Diseño agentes de IA multimedia para WhatsApp y Telegram con Python y n8n, con procesamiento automatizado de Excel para agendamiento y dashboards de Metabase autoalojados para analítica interactiva.',
+          'Diseño workflows de negocio en producción con n8n, y construyo redes de agentes autónomos como prueba de concepto sobre el OpenAI Agents SDK.',
+          'Implemento arquitecturas RAG y GraphRAG en Python y n8n para darle a los agentes autónomos recuperación de contexto profunda.',
+          'Construyo y autoalojo integraciones de Model Context Protocol (MCP) y agentes de voz en tiempo real sobre LiveKit, incluyendo el despliegue completo del servidor para interacciones de baja latencia.',
+          'Resultados entregados: voz IA de baja latencia en producción, pipelines de agendamiento totalmente automatizados, y dashboards de BI interactivos en tiempo real.',
+        ],
+      },
+    },
+  },
   {
     id: 'transborder',
     company: 'Transborder',

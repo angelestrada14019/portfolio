@@ -93,7 +93,7 @@ export function Hero() {
             <MagneticButton href={localizedHref('/projects', locale)}>
               {siteData.hero.ctaPrimary} →
             </MagneticButton>
-            <MagneticButton href={localizedHref('/contact', locale)} variant="ghost">
+            <MagneticButton href={localizedHref('/about', locale)} variant="ghost">
               {siteData.hero.ctaSecondary}
             </MagneticButton>
           </div>

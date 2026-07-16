@@ -16,13 +16,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="/projects" />
     <xhtml:link rel="alternate" hreflang="es" href="/es/projects" />
   </url>
-  <url>
-    <loc>/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="/contact" />
-    <xhtml:link rel="alternate" hreflang="es" href="/es/contact" />
-  </url>
   <url><loc>/es</loc></url>
   <url><loc>/es/about</loc></url>
   <url><loc>/es/projects</loc></url>
-  <url><loc>/es/contact</loc></url>
 </urlset>
