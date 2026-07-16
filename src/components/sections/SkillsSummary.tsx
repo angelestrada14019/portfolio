@@ -24,7 +24,7 @@ const LAYERS: StackLayer[] = [
     id: 'application',
     color: 'var(--color-accent-2)',
     bg: 'var(--color-accent-2-light)',
-    items: ['Python', 'Java', 'Spring Boot', 'FastAPI', 'React', 'TypeScript'],
+    items: ['Python', 'Java', 'Spring Boot', 'FastAPI', 'JavaScript', 'React', 'TypeScript', 'CSS', 'Vite'],
   },
   {
     id: 'infrastructure',
