@@ -30,6 +30,7 @@ export const experience: ExperienceEntry[] = [
           'Designed a multi-tenant SaaS architecture with strict data isolation using Azure B2C, Azure App Configuration, and Azure Key Vault.',
           'Engineer and maintain mission-critical Java 11 / Spring Boot microservices on Kubernetes, handling high-load logistics data.',
           'Automated infrastructure provisioning and deployments through CI/CD pipelines built with Azure DevOps and Terraform.',
+          'Measurable impact: a 70%+ reduction in manual rate classification time, a 35% increase in query performance, and 97% uptime sustained on critical integrations.',
         ],
       },
       es: {
@@ -40,6 +41,7 @@ export const experience: ExperienceEntry[] = [
           'Diseñé una arquitectura SaaS multi-tenant con aislamiento estricto de datos usando Azure B2C, Azure App Configuration, y Azure Key Vault.',
           'Desarrollo y mantengo microservicios críticos en Java 11 / Spring Boot sobre Kubernetes, manejando datos logísticos de alta carga.',
           'Automaticé el aprovisionamiento de infraestructura y despliegues mediante pipelines CI/CD construidos con Azure DevOps y Terraform.',
+          'Impacto medible: una reducción de más del 70% en el tiempo de clasificación manual de tarifas, un aumento del 35% en el rendimiento de consultas, y 97% de uptime sostenido en integraciones críticas.',
         ],
       },
     },
