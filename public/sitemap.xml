@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/" />
+    <xhtml:link rel="alternate" hreflang="es" href="/es" />
+  </url>
+  <url>
+    <loc>/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="/es/about" />
+  </url>
+  <url>
+    <loc>/projects</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="/es/projects" />
+  </url>
+  <url>
+    <loc>/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="/es/contact" />
+  </url>
+  <url><loc>/es</loc></url>
+  <url><loc>/es/about</loc></url>
+  <url><loc>/es/projects</loc></url>
+  <url><loc>/es/contact</loc></url>
+</urlset>
