@@ -3,20 +3,20 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="/" />
-    <xhtml:link rel="alternate" hreflang="es" href="/es" />
+    <xhtml:link rel="alternate" hreflang="es" href="/" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en" />
   </url>
   <url>
     <loc>/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="/about" />
-    <xhtml:link rel="alternate" hreflang="es" href="/es/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/about" />
   </url>
   <url>
     <loc>/projects</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="/projects" />
-    <xhtml:link rel="alternate" hreflang="es" href="/es/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/projects" />
   </url>
-  <url><loc>/es</loc></url>
-  <url><loc>/es/about</loc></url>
-  <url><loc>/es/projects</loc></url>
+  <url><loc>/en</loc></url>
+  <url><loc>/en/about</loc></url>
+  <url><loc>/en/projects</loc></url>
 </urlset>

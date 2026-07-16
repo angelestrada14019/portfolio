@@ -11,16 +11,16 @@ interface Props {
  * Path-preserving language switch — this is the fix the reference site
  * (angel-landing) doesn't need, since it's a single-page site where every
  * language switch harmlessly lands on "the page." Here, a recruiter reading
- * /projects/segurodata and clicking "ES" must land on /es/projects/segurodata,
+ * /en/projects/segurodata and clicking "ES" must land on /projects/segurodata,
  * not get bounced to the Spanish homepage and lose their place.
  */
 function targetPath(locale: 'en' | 'es', pathname: string): string {
-  if (locale === 'en') {
-    // Currently English → build the /es equivalent
-    return pathname === '/' ? '/es' : `/es${pathname}`
+  if (locale === 'es') {
+    // Currently Spanish → build the /en equivalent
+    return pathname === '/' ? '/en' : `/en${pathname}`
   }
-  // Currently Spanish → strip the /es prefix
-  const stripped = pathname.replace(/^\/es/, '')
+  // Currently English → strip the /en prefix
+  const stripped = pathname.replace(/^\/en/, '')
   return stripped === '' ? '/' : stripped
 }
 

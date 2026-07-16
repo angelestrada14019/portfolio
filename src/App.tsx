@@ -64,7 +64,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>{pageRoutes}</Route>
-      <Route path="/es" element={<Layout />}>{pageRoutes}</Route>
+      <Route path="/en" element={<Layout />}>{pageRoutes}</Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

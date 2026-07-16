@@ -2,7 +2,7 @@ import { createContext, useContext } from 'react'
 
 export type Locale = 'en' | 'es'
 
-export const LocaleContext = createContext<Locale>('en')
+export const LocaleContext = createContext<Locale>('es')
 
 export function useLocale(): Locale {
   return useContext(LocaleContext)

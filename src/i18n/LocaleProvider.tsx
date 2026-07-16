@@ -4,9 +4,8 @@ import { LocaleContext, type Locale } from './localeContext'
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
   const { pathname } = useLocation()
-  // English is the default/unprefixed locale here (flipped from the
-  // Spanish-default reference site) — this app targets a US-based audience.
-  const locale: Locale = pathname.startsWith('/es') ? 'es' : 'en'
+  // Spanish is the default/unprefixed locale; English lives under /en.
+  const locale: Locale = pathname.startsWith('/en') ? 'en' : 'es'
 
   return (
     <LocaleContext.Provider value={locale}>
