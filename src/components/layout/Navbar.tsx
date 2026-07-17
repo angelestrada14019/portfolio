@@ -105,6 +105,15 @@ export function Navbar() {
           </nav>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <a
+              href={locale === 'es' ? '/cv/CV_Angel_Estrada_ES.pdf' : '/cv/CV_Angel_Estrada_EN.pdf'}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-cv-link nav-cv-desktop"
+            >
+              {ui.nav.downloadCv}
+            </a>
             <div className="nav-lang-desktop">
               <LanguageSwitcher />
             </div>

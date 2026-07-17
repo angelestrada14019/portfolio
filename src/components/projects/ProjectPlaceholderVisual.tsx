@@ -8,13 +8,34 @@ const categoryColor: Record<ProjectCategory, string> = {
 }
 
 /**
- * No real screenshots exist for these projects yet — rather than an
- * apologetic empty box, this is a deliberate visual that says "the code is
- * the demo": a dot-grid + circuit-corner treatment tinted per category,
- * with a prominent GitHub link.
+ * Real screenshots only exist for a handful of these projects — rather than
+ * an apologetic empty box for the rest, this is a deliberate visual that
+ * says "the code is the demo": a dot-grid + circuit-corner treatment tinted
+ * per category, with a prominent GitHub link. When a real screenshot IS
+ * available (`image`), it takes over the same frame instead.
  */
-export function ProjectPlaceholderVisual({ categories }: { categories: ProjectCategory[] }) {
+export function ProjectPlaceholderVisual({ categories, image }: { categories: ProjectCategory[]; image?: string }) {
   const accent = categoryColor[categories[0]] ?? 'var(--color-accent)'
+
+  if (image) {
+    return (
+      <div
+        style={{
+          position: 'relative',
+          aspectRatio: '16 / 10',
+          borderRadius: '0.75rem',
+          border: '1px solid var(--color-line)',
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src={image}
+          alt=""
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      </div>
+    )
+  }
 
   return (
     <div

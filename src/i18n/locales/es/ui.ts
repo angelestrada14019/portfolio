@@ -7,6 +7,7 @@ export const uiEs: UIStrings = {
     closeMenu: 'Cerrar menú',
     menuLabel: 'Menú móvil',
     mainLabel: 'Enlaces principales',
+    downloadCv: 'Descargar CV',
   },
   footer: {
     category: 'AI Automation Engineer',

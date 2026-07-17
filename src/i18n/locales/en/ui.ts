@@ -6,6 +6,7 @@ export interface UIStrings {
     closeMenu: string
     menuLabel: string
     mainLabel: string
+    downloadCv: string
   }
   footer: {
     category: string
@@ -29,6 +30,7 @@ export const uiEn: UIStrings = {
     closeMenu: 'Close menu',
     menuLabel: 'Mobile menu',
     mainLabel: 'Main links',
+    downloadCv: 'Download CV',
   },
   footer: {
     category: 'AI Automation Engineer',

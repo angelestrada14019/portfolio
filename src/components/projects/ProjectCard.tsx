@@ -15,7 +15,7 @@ export function ProjectCard({ project }: { project: Project }) {
       className="project-card"
       style={{ display: 'block', padding: '1.25rem', textDecoration: 'none' }}
     >
-      <ProjectPlaceholderVisual categories={project.categories} />
+      <ProjectPlaceholderVisual categories={project.categories} image={project.image} />
       <h3 className="text-h2" style={{ fontSize: '1.25rem', marginTop: '1.25rem', marginBottom: '0.5rem' }}>
         {t.title}
       </h3>

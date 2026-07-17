@@ -117,6 +117,18 @@ export function MobileNav({ isOpen, onClose, isActive }: MobileNavProps) {
       <div style={{ marginTop: '3rem' }}>
         <LanguageSwitcher variant="mobile" onSwitch={onClose} />
       </div>
+
+      <a
+        href={locale === 'es' ? '/cv/CV_Angel_Estrada_ES.pdf' : '/cv/CV_Angel_Estrada_EN.pdf'}
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onClose}
+        className="nav-cv-link--mobile"
+        style={{ marginTop: '1.5rem' }}
+      >
+        {ui.nav.downloadCv}
+      </a>
     </div>
   )
 }

@@ -36,14 +36,14 @@ export function ProjectChapter({ project, index }: { project: Project; index: nu
       )
       // A clip-path wipe reads as a more deliberate "reveal" for the
       // visual half than a plain fade — the text keeps the directional
-      // slide since a mask reads oddly on running text.
+      // slide since a mask reads oddly on running text. No delay: text
+      // and visual share the same trigger and start together.
       gsap.fromTo(
         visual,
         { clipPath: 'inset(0 0 100% 0)' },
         {
           clipPath: 'inset(0 0 0 0)',
           duration: 0.8,
-          delay: 0.1,
           ease: 'emil-io',
           scrollTrigger: { trigger: rootRef.current },
         },
@@ -94,7 +94,7 @@ export function ProjectChapter({ project, index }: { project: Project; index: nu
         data-cursor-text={siteData.home.cursorViewLabel}
         style={{ order: reversed ? 1 : 2, display: 'block', textDecoration: 'none' }}
       >
-        <ProjectPlaceholderVisual categories={project.categories} />
+        <ProjectPlaceholderVisual categories={project.categories} image={project.image} />
       </Link>
     </div>
   )

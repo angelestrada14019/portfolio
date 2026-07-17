@@ -25,6 +25,7 @@ export interface Project {
   techStack: TechBadge[]
   featured: boolean
   status: 'live' | 'demo' | 'code-sample'
+  image?: string // /screenshots/<slug>.png — falls back to the abstract placeholder if unset
   translations: { en: ProjectTranslation; es: ProjectTranslation }
 }
 
@@ -45,6 +46,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     status: 'live',
+    image: '/screenshots/segurodata.png',
     translations: {
       en: {
         title: 'SeguroData',
@@ -80,6 +82,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     status: 'code-sample',
+    image: '/illustrations/langgraph-support-triage.svg',
     translations: {
       en: {
         title: 'LangGraph Support Triage',
@@ -112,6 +115,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     status: 'code-sample',
+    image: '/illustrations/livekit-voice-agent.svg',
     translations: {
       en: {
         title: 'LiveKit Voice Agent',
@@ -145,6 +149,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     status: 'code-sample',
+    image: '/illustrations/whatsapp-data-agent.svg',
     translations: {
       en: {
         title: 'WhatsApp Data Agent',
@@ -177,6 +182,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/telegram-data-agent.svg',
     translations: {
       en: {
         title: 'Telegram Data Agent',
@@ -207,6 +213,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/agent-chatbot.svg',
     translations: {
       en: {
         title: 'Agent Chatbot',
@@ -236,6 +243,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     status: 'code-sample',
+    image: '/illustrations/n8n-automation-templates.svg',
     translations: {
       en: {
         title: 'n8n Automation Templates',
@@ -266,6 +274,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/healthcare-ai-agent-workflows.svg',
     translations: {
       en: {
         title: 'Healthcare AI Agent Workflows',
@@ -297,6 +306,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/obsidian-second-brain.svg',
     translations: {
       en: {
         title: 'Obsidian Second Brain',
@@ -325,6 +335,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/naturalql.svg',
     translations: {
       en: {
         title: 'NaturalQL',
@@ -354,6 +365,7 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'code-sample',
+    image: '/illustrations/microservice-security-oauth2.svg',
     translations: {
       en: {
         title: 'Microservice Security (OAuth2)',
